@@ -1,5 +1,5 @@
 ---
-name: codebase-analyzer
+name: claude-codebase-analyzer
 description: "Deeply analyze a codebase or specific folder to fully understand its architecture, design patterns, data flow, business logic, dependencies, APIs, and all other aspects. Use this skill PROACTIVELY whenever the user asks to understand, analyze, or explore code — e.g., 'analyze this codebase', 'how does this project work?', 'explain the folder structure', 'break down this code for me', 'what does this project do?', 'deep dive into this code'. This is for comprehensive understanding, NOT for code review or bug fixing."
 ---
 
@@ -67,3 +67,4 @@ Save as a markdown file only when the user explicitly asks — e.g., "save as a 
 - **Go deep**: Understand internal implementations, not just function signatures
 - **Connect the dots**: Explain how files connect to form the whole, not just describe files individually
 - **Explain the why**: Beyond "what this code does", explain "why it is structured this way"
+- **No test execution**: Do not run tests, build commands, or execute any code. This skill is purely for reading and understanding — never for running anything

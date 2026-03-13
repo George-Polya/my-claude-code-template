@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Codebase Analyzer"
+  short_description: "Deep analysis of codebase structure and runtime flow"
+  default_prompt: "Use $codex-codebase-analyzer to inspect this repository or a specific folder deeply and summarize how it works in Markdown."
