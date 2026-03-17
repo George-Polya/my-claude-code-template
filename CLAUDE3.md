@@ -49,7 +49,7 @@ For multi-step tasks, state a brief plan:
 
 ## 4. Autonomous Agent & Skill Dispatch
 
-Specialized agents and skills live in `agents/` and `skills/`. Proactively dispatch them — don't wait to be asked.
+Specialized agents and skills live in `~/.claude/agents/` and `~/.claude/skills/`. Proactively dispatch them — don't wait to be asked.
 
 - **After writing or modifying code** → dispatch a code review agent.
 - **For API or database design** → dispatch an architecture agent.
@@ -65,7 +65,7 @@ source .venv/bin/activate        # activate before any Python command
 pip install -r requirements.txt  # install inside venv, never globally
 ```
 
-If `.venv` does not exist, create it first: `python -m venv .venv`
+If `.venv` does not exist, request it to the user.
 
 ---
 
