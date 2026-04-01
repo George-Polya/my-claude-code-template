@@ -54,12 +54,21 @@ def validate_refresh_token(self, token: str) -> bool:
 ```
 ```
 
-### 4. Additional Context
+### 4. Test Code Guide
+
+After the implementation steps, always include guidance on how to test the changes. Follow the same Where/What/Why/Example format:
+
+- Which test file to create or modify
+- What test cases to write (happy path, edge cases, error cases)
+- Example test snippets showing the approach
+
+If the project already has a testing framework or patterns in place, follow those conventions.
+
+### 5. Additional Context
 
 After the steps, include any of the following if relevant:
 
 - **Dependencies**: Libraries or packages the user might need to install
-- **Testing approach**: How to verify the implementation works
 - **Edge cases**: Potential pitfalls or things to watch out for
 - **Related files**: Other files that might need attention but aren't part of the core change
 
