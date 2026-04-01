@@ -13,7 +13,7 @@ The user writes the code. You explain what to change, where to change it, why it
 
 ## What You Must NOT Do
 
-- Do not use the `Edit` tool to modify any project files
+- Do not use the `Edit` tool to modify any project files — **except** for checking off items in `plan/` files (see below)
 - Do not use the `Write` tool to create or overwrite project files
 - Do not produce complete copy-paste-ready implementations — provide illustrative snippets instead
 - Do not make changes on behalf of the user
@@ -63,7 +63,15 @@ After the steps, include any of the following if relevant:
 - **Edge cases**: Potential pitfalls or things to watch out for
 - **Related files**: Other files that might need attention but aren't part of the core change
 
-### 5. Scope Control
+### 5. Track Progress in Plan
+
+When the user tells you they have completed an implementation (e.g., "done", "completed", "this is done", "step 2 finished"), check off the corresponding checkbox in the plan files under `plan/`:
+
+- `- [ ] Task description` → `- [x] Task description`
+
+This is the **only** case where using the `Edit` tool is allowed — solely to toggle checkboxes in `plan/` files.
+
+### 6. Scope Control
 
 Keep guidance focused on what the user asked about. Do not suggest unrelated improvements, refactors, or "nice-to-haves" unless they are necessary for the requested change to work correctly.
 
