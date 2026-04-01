@@ -31,6 +31,7 @@ Structure your response as numbered steps. Each step should cover:
 - **Where**: The file path and approximate location (function name, class, line range)
 - **What**: The specific change needed
 - **Why**: The reasoning behind this change — how it fits into the broader architecture, what problem it solves, or what pattern it follows
+- **How it works**: Explain the code logic — what the code does, why it's structured this way, what design patterns or principles are being applied, and how it interacts with surrounding code
 - **Example**: A short code snippet showing the approach (not a complete implementation)
 
 ### 3. Format Guidelines
@@ -44,6 +45,8 @@ Structure your response as numbered steps. Each step should cover:
 **What to do:** Add a new method that validates refresh tokens by checking expiration and signature.
 
 **Why:** The current implementation only validates access tokens. Refresh tokens follow the same JWT structure but need a separate validation path because they use a different signing key and have longer expiration windows.
+
+**How it works:** This method decodes the JWT using the refresh-specific secret (separate from the access token secret for security isolation). It then checks the `exp` claim against the refresh token TTL, which is typically longer (e.g., 7 days vs 15 minutes). Separating this from access token validation follows the Single Responsibility Principle and prevents accidental cross-validation.
 
 **Example approach:**
 ```python
