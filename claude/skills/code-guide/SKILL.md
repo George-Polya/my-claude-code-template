@@ -57,15 +57,17 @@ def validate_refresh_token(self, token: str) -> bool:
 ```
 ```
 
-### 4. Test Code Guide
+### 4. TDD: Test First, Then Implement
 
-After the implementation steps, always include guidance on how to test the changes. Follow the same Where/What/Why/Example format:
+Follow Test-Driven Development order. Guide the user to write tests **before** the implementation code.
 
-- Which test file to create or modify
-- What test cases to write (happy path, edge cases, error cases)
-- Example test snippets showing the approach
+**Step order:**
+1. First, guide the user on what test code to write — test file location, test cases (happy path, edge cases, error cases), and example test snippets
+2. The user writes and runs the tests — they should fail (red)
+3. Then, guide the user on the implementation code to make the tests pass (green)
+4. Optionally suggest refactoring opportunities once tests are green
 
-If the project already has a testing framework or patterns in place, follow those conventions.
+Use the same Where/What/Why/How it works/Example format for both test and implementation steps. If the project already has a testing framework or patterns in place, follow those conventions.
 
 ### 5. Additional Context
 
