@@ -17,5 +17,15 @@
       }
     ]
   },
+  "permissions": {
+    "read": {
+      "deny": [
+        "**/.env*",
+        "**/secrets/**",
+        "**/*.pem",
+        "**/*.key"
+      ]
+    }
+  },
   "alwaysThinkingEnabled": true
 }
