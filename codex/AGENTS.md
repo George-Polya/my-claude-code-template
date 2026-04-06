@@ -88,5 +88,5 @@ pip install -r requirements.txt  # install inside venv, never globally
 If `.venv` does not exist, request it to the user.
 
 ---
-
+** MUST NOT ACCESS `.env` ** 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
