@@ -1,5 +1,5 @@
 ---
-name: claude-codebase-analyzer
+name: codebase-analyzer
 description: "Deeply analyze a codebase or specific folder to fully understand its architecture, design patterns, data flow, business logic, dependencies, APIs, and all other aspects. Use this skill PROACTIVELY whenever the user asks to understand, analyze, or explore code — e.g., 'analyze this codebase', 'how does this project work?', 'explain the folder structure', 'break down this code for me', 'what does this project do?', 'deep dive into this code'. This is for comprehensive understanding, NOT for code review or bug fixing."
 ---
 

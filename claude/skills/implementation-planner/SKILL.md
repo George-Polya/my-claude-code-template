@@ -1,5 +1,5 @@
 ---
-name: claude-implementation-planner
+name: implementation-planner
 description: "Create detailed implementation plans as markdown files in the plan/ directory. Use PROACTIVELY when the user asks to plan a feature, write an implementation plan, create a development roadmap, or says anything like 'plan this feature', 'write a plan for...', 'create implementation steps for...', or mentions writing plans to plan/. Also trigger when the user wants to break down a feature into concrete development steps before coding, or asks for a technical specification document for a new feature."
 ---
 
