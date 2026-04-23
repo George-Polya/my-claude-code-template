@@ -2,8 +2,20 @@
   "env": {
     "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000",
     "MAX_THINKING_TOKENS": "31999",
-    "ANTHROPIC_BASE_URL": "https://api.anthropic.com"
-  },  
+    "includeGitInstructions": "false",
+    "CLAUDE_CODE_GLOB_NO_IGNORE": "false"
+  },
+  "permissions": {
+    "read": {
+      "deny": [
+        "**/.env*",
+        "**/secrets/**",
+        "**/*.pem",
+        "**/*.key"
+      ]
+    }
+  },
+  "model": "opus[1m]",
   "hooks": {
     "PreToolUse": [
       {
@@ -17,15 +29,7 @@
       }
     ]
   },
-  "permissions": {
-    "read": {
-      "deny": [
-        "**/.env*",
-        "**/secrets/**",
-        "**/*.pem",
-        "**/*.key"
-      ]
-    }
-  },
-  "alwaysThinkingEnabled": true
+  "language": "Korean",
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "xhigh"
 }
