@@ -1,4 +1,0 @@
-interface:
-  display_name: "Codex Implementation Planner"
-  short_description: "Writes deep implementation plans to plan/"
-  default_prompt: "Use $codex-implementation-planner to analyze this codebase deeply and save a detailed feature plan under plan/."
